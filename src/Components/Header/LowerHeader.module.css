@@ -1,0 +1,50 @@
+
+.menuIcon {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #232f3e;
+ 
+}
+
+.menuList {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+}
+
+.menuList::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.menuList li {
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 6px 8px;
+  transition: color 0.3s, background-color 0.3s;
+  flex-shrink: 0;
+}
+
+.menuList li:hover {
+  color: #fff;
+  background-color: #232f3e;
+  border-radius: 4px;
+}
+.menuItems {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 576px) {
+  .menuItems {
+    display: none;
+  }
+}
