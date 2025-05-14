@@ -2,8 +2,9 @@
 import React from 'react';
 import { SlLocationPin } from 'react-icons/sl';
 import { FiSearch } from 'react-icons/fi';
+import {Link} from 'react-router-dom'
 import { BsCart } from "react-icons/bs";
-import styles from './Header.module.css'; // ✅ correct import
+import styles from './Header.module.css'; // 
 import LowerHeader from './LowerHeader';
 
 const Header = () => {
@@ -14,12 +15,12 @@ const Header = () => {
 
         {/* Left - Logo and Location */}
         <div className={styles.header__left}>
-          <a href="/" className={`${styles.header__logo} ${styles.header__hoverBox}`}>
+          <Link to="/" className={`${styles.header__logo} ${styles.header__hoverBox}`}>
             <img 
               src="https://www.pngplay.com/wp-content/uploads/3/White-Amazon-Logo-PNG-HD-Quality.png" 
               alt="amazon logo" 
             />
-          </a>
+          </Link>
           <div className={`${styles.header__location} ${styles.header__hoverBox}`}>
             <SlLocationPin className={styles.header__locationIcon} />
             <div>
@@ -57,26 +58,26 @@ const Header = () => {
           </div>
 
           {/* Account */}
-          <a href="#" className={`${styles.header__account} ${styles.header__hoverBox}`}>
+          <Link to="#" className={`${styles.header__account} ${styles.header__hoverBox}`}>
             <div>
               <span>Hello, Sign in</span><br />
               <span>Account & Lists</span>
             </div>
-          </a>
+          </Link>
 
           {/* Orders */}
-          <a href="#" className={`${styles.header__orders} ${styles.header__hoverBox}`}>
+          <Link to="/Orders" className={`${styles.header__orders} ${styles.header__hoverBox}`}>
             <div>
               <p>Returns</p>
               <span>& Orders</span>
             </div>
-          </a>
+          </Link>
 
           {/* Cart */}
-          <a href="/cart" className={`${styles.header__cart} ${styles.header__hoverBox}`}>
+          <Link to="/cart" className={`${styles.header__cart} ${styles.header__hoverBox}`}>
             <span role="img" aria-label="cart"><BsCart /></span>
             <span className={styles.header__cartCount}>0</span>
-         </a>
+         </Link>
         </div>
       </div>
       

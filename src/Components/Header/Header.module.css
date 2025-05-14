@@ -37,8 +37,9 @@
 }
 
 .header__logo img {
-  height: 40px;
-  object-fit: contain;
+  height: 35px;
+  margin-top: 20px;
+  /* object-fit: contain; */
 }
 
 .header__location {
