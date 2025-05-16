@@ -1,9 +1,13 @@
-.section {
+   *{
+    margin: 0;
+    padding: 0;
+   }
+   .section {
   display: grid;
   grid-template-columns: 1fr; /* default: 1 column (mobile) */
   gap: 1rem;
-  padding: 1rem;
-  background-color: #f9f9f9;
+  /* padding: 1rem; */
+  background-color: white;
 }
 
 @media (min-width: 600px) {
@@ -19,11 +23,13 @@
 }
 
 .card {
+  color: #000;
+  position: relative;
+  z-index: 2;
   border: 1px solid #ddd;
   border-radius: 8px;
- margin-top: -20px;
+  margin-top: -40px;
   background-color: white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out;
   display: flex;
   flex-direction: column;
@@ -43,16 +49,19 @@
 }
 
 .card h2 {
-  font-size: 1.1rem;
+    font-size: 1.1rem;
   margin: 0.5rem 0 0.25rem;
+  color: #000; 
 }
 
+
 .card img {
-  width: 80%;
-  /* height: 180px; */
+  height: 250px;
   object-fit: cover;
   border-radius: 4px;
   margin-bottom: 0.5rem;
+  display: block; 
+  margin: auto;
 }
 
 .card p {

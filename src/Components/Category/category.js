@@ -2,23 +2,23 @@
 
 export const category = [
   {
-    title: 'Amazon Fresh',
-    name: 'Amazon Fresh',
-    imglink: 'https://m.media-amazon.com/images/I/91nMVKxEdmL._SX679_.jpg',
-  },
-  {
-    title: 'Jewelry',
-    name: 'Jewelry',
-    imglink: 'https://m.media-amazon.com/images/I/713czRFYmzL._AC_UL750_FMwebp_QL65_.jpg',
-  },
-  {
     title: 'Electronics',
-    name: 'Electronics',
-    imglink: 'https://images-na.ssl-images-amazon.com/images/I/81UgMATXWBL._AC_UL165_SR165,165_.jpg',
+    name: 'electronics',
+    imglink: 'https://m.media-amazon.com/images/I/71ujRQeWAYL._AC_SX425_.jpg',
   },
   {
-    title: 'Smart Home',
-    name: 'Smart Home',
-    imglink: 'https://m.media-amazon.com/images/I/81cQsOTh8lL.__AC_SX300_SY300_QL70_FMwebp_.jpg',
+    title: 'Discover Fashion Trends',
+    name: "women's clothing ",
+    imglink: 'https://m.media-amazon.com/images/I/71hlS-ElE8L._AC_SY550_.jpg',
+  },
+  {
+    title: "Men's Clothing",
+    name: "men's clothing",
+    imglink: 'https://m.media-amazon.com/images/I/71d-lKV5VsL._AC_SY550_.jpg',
+  },
+  {
+    title: 'Jewelery',
+    name: 'jewelery',
+    imglink: 'https://m.media-amazon.com/images/I/713czRFYmzL._AC_UL750_FMwebp_QL65_.jpg',
   },
 ];

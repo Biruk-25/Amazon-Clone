@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Rating from '@mui/material/Rating';
 import CurrencyFormat from '../CurrencyFormat/CurrencyFormat';
 import styles from './Product.module.css'; // Assuming CSS is in Product.module.css
@@ -9,9 +10,9 @@ function ProductCard({ product }) {
 
   return (
     <div className={styles.card}>
-      <a href="#">
+      <Link to={`/category/${product.name}`}>
         <img src={image} alt={title} className={styles.image} />
-      </a>
+      </Link>
       <div>
         <h3 className={styles.title}>{title}</h3>
         <div className={styles.ratingContainer}>
@@ -41,9 +42,9 @@ export default ProductCard;
 
 //   return (
 //     <div className={styles.card}>
-//       <a href="#">
+//       <Link to="#">
 //         <img src={image} alt={title} className={styles.image} />
-//       </a>
+//       </Link>
 //       <div>
 //         <h3 className={styles.title}>{title}</h3>
 //         <div className={styles.ratingContainer}>
