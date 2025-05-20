@@ -12,7 +12,8 @@ import NotFound from '../Pages/NotFound';
 
 function Routing() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Amazon-Clone">
+
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/signin" element={<SignIn />} />
