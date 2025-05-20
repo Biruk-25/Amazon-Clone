@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "vite",
    " predeploy":"npm run build",
-   " deploy": "git-pages -d build",
+   " deploy": "git-pages -d dist",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
