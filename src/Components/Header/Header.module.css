@@ -1,19 +1,26 @@
 
-/* Global reset */
+
+
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
-/* Header styles */
-.header {
-  background-color: #131921;
-  color: white;
-  font-family: Arial, sans-serif;
-  padding: 10px 10px;
+
+/* Sticky container */
+.stickyWrapper {
   position: sticky;
   top: 0;
   z-index: 100;
+  background-color: #131921;
+}
+
+/* Header */
+.header {
+  /* background-color: #131921; */
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 10px 10px;
   width: 100%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -39,7 +46,7 @@
 .header__logo img {
   height: 35px;
   margin-top: 20px;
-  /* object-fit: contain; */
+ 
 }
 
 .header__location {
@@ -92,11 +99,11 @@
 .header__searchIcon {
   background-color: #febd69;
   color: black;
-  padding: 10px 14px;
+  padding: 6px;
   cursor: pointer;
-  font-size: 24px;
-  border-top-right-radius: 24px;
-  border-bottom-right-radius: 24px;
+  font-size: 37px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
@@ -141,9 +148,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 10px;
-  /* min-width: 110px; */
-}
+
+ 
+ } 
 
 .header__account span:first-child,
 .header__orders p {
@@ -156,13 +163,9 @@
   font-weight: bold;
   font-size: 12px;
   line-height: 1.2;
+  
 }
 /* Generic hover box style */
-.header__hoverBox {
-  padding: 6px 8px;
-  border-radius: 4px;
-  transition: background-color 0.2s ease, border 0.2s ease;
-}
 
 .header__hoverBox:hover {
   background-color: rgba(255, 255, 255, 0.1);
@@ -185,8 +188,9 @@
 
 .header__cartCount {
   position: absolute;
+  margin-left: 6px;
   top: -4px;
-  /* right: -8px; */
+  
   background-color: #f08804;
   color: black;
   font-size: 15px;

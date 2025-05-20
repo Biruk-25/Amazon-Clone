@@ -6,12 +6,19 @@ import {Link} from 'react-router-dom'
 import { BsCart } from "react-icons/bs";
 import styles from './Header.module.css'; // 
 import LowerHeader from './LowerHeader';
-
+import { useContext } from 'react';
+import {DataContext} from '../DataProvider/DataProvider'
 const Header = () => {
+
+const [{basket},dispatch]=useContext(DataContext)
+const totalItem = basket?.reduce((amount, item)=>{
+  return item.amount + amount
+},0)
+
   return ( 
-    <>
-    <header className={styles.header}>
-      <div className={styles.header__container}>
+    <div className={styles.stickyWrapper}>
+      <header className={styles.header}>
+        <div className={styles.header__container}>
 
         {/* Left - Logo and Location */}
         <div className={styles.header__left}>
@@ -76,14 +83,14 @@ const Header = () => {
           {/* Cart */}
           <Link to="/cart" className={`${styles.header__cart} ${styles.header__hoverBox}`}>
             <span role="img" aria-label="cart"><BsCart /></span>
-            <span className={styles.header__cartCount}>0</span>
+            <span className={styles.header__cartCount}>{totalItem}</span>
          </Link>
         </div>
       </div>
       
     </header>
     <LowerHeader/>
-    </>
+    </div>
   );
 };
 

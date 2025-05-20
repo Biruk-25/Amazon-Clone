@@ -1,26 +1,23 @@
-
 .menuIcon {
   display: flex;
   align-items: center;
   font-size: 16px;
-  color: #232f3e;
- 
+  color: #d2d6db;
 }
 
 .menuList {
+  color: rgb(219, 227, 227);
   list-style: none;
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
-  margin: 0;
-  padding: 0;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  scrollbar-width: none; /* Firefox */
+  scrollbar-width: none;
 }
 
 .menuList::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+  display: none;
 }
 
 .menuList li {
@@ -34,10 +31,11 @@
 }
 
 .menuList li:hover {
-  color: #fff;
+  color: #f5ecec;
   background-color: #232f3e;
   border-radius: 4px;
 }
+
 .menuItems {
   display: flex;
   gap: 10px;
