@@ -1,0 +1,58 @@
+/* src/Pages/Orders/Order.module.css */
+
+.container {
+  padding: 2rem;
+  background-color: #f2f3e9;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.orders_container {
+  background-color: #f8eeee;
+  max-width: 1500px;
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #333;
+}
+
+.orangeLine {
+  width: 60%;
+  height: 3px;
+  background-color: orange;
+  border: none;
+  margin: 1.5rem auto;
+}
+
+.noOrders {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 2rem;
+}
+
+/* 🔁 Buy Again Button */
+.payNowButton {
+  margin: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: orange;
+  color: white;
+  font-size: large;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.payNowButton:hover {
+  background-color: #e69500;
+}
