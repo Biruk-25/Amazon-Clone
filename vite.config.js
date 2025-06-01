@@ -3,14 +3,23 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   base: "/Amazon-Clone/",
-  plugins: [react()]
+  plugins: [react()],
+  server: {
+    proxy: {
+      '/api': 'http://localhost:5001/clone-c5a71/us-central1'
+    }
+  }
 })
 
-// vite.config.js
+
+
+
+
 // import { defineConfig } from 'vite'
 // import react from '@vitejs/plugin-react'
 
 // export default defineConfig({
-//   plugins: [react()],
-//   base: process.env.NODE_ENV === 'production' ? '/Amazon-Clone/' : '/', // ✅ dynamic base
+//   base: "/Amazon-Clone/",
+//   plugins: [react()]
 // })
+
