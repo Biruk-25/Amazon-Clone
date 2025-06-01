@@ -1,0 +1,336 @@
+SignUp.module.css
+/* Layout */
+body {
+  height: 100%;
+  margin: 0;
+}
+.authSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%; 
+  background-color: #f7f7f7;
+  font-family: Arial, sans-serif;
+   text-align: center;
+}
+
+
+
+
+.logoLink {
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+}
+
+.formContainer {
+  background: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+   width: 100%;
+}
+
+/* Typography */
+h1 {
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #111;
+  text-align: center;
+}
+
+.policy {
+  font-size: 0.85rem;
+  color: #555;
+  margin: 1.5rem 0 1rem;
+  line-height: 1.4;
+}
+
+.error,
+.errorMessage {
+  color: red;
+  font-size: 0.9rem;
+  background-color: #ffe6e6;
+  border: 1px solid red;
+  border-radius: 4px;
+  padding: 0.15rem 0.5rem;
+  text-align: center;
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+/* Form Elements */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup label {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #222;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+}
+
+.icon {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 0.6rem 0.8rem;
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #ff9900;
+  box-shadow: 0 0 6px #ff990080;
+}
+
+/* Buttons */
+.button {
+  padding: 8px 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.signInButton {
+  background-color: #f0c14b;
+  border-color: #a88734;
+  color: #111;
+  margin-top: 10px;
+}
+
+.createAccountButton {
+  background-color: #e7e9ec;
+  border-color: #adb1b8;
+  color: #111;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .formContainer {
+    padding: 1.5rem 1.8rem;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .button {
+    font-size: 1rem;
+  }
+}
+
+/* .authSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  background-color: #f7f7f7;
+  font-family: Arial, sans-serif;
+}
+
+.logoLink {
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+}
+
+.formContainer {
+  background: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #111;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup label {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #222;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+}
+
+.icon {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 0.6rem 0.8rem;
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+   transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-color: #ff9900; 
+  box-shadow: 0 0 6px #ff990007;
+}
+input:focus,
+button:focus {
+  outline: 2px solid #ff9900;
+  outline-offset: 2px;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+
+
+.signInButton {
+  background-color: #f0c14b;
+  border: 1px solid #a88734;
+  color: #111;
+  padding: 8px 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+.createAccountButton {
+  background-color: #e7e9ec;
+  border: 1px solid #adb1b8;
+  color: #111;
+  padding: 8px 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+
+
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  background-color: #ffe6e6;
+  border: 1px solid red;
+  border-radius: 4px;
+
+}
+.policy {
+  font-size: 0.85rem;
+  color: #555555;
+  margin: 1.5rem 0 1rem;
+  line-height: 1.4;
+}
+
+.button {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+.button:active {
+  transform: translateY(0);
+}  */
+/* Responsive */
+ /* @media (max-width: 480px) {
+  .formContainer {
+    padding: 1.5rem 1.8rem;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .button {
+    font-size: 1rem;
+  }
+} */
