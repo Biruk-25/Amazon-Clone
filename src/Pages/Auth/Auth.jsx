@@ -79,6 +79,10 @@ function Auth() {
       </Link>
 
       <div className={styles.formContainer}>
+        <p className={styles.disclaimerBanner}>
+         ⚠️ This is a portfolio project for educational purposes only. Do not enter real personal information. ⚠️
+       </p>
+
         <h1>Sign In</h1>
 
         {location?.state?.msg && (
